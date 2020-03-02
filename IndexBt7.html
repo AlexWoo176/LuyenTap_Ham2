@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function swap(a,b) {
+        let temp = a;
+            a = b;
+            b = temp;
+            return [a,b];
+    }
+    function main() {
+        let num1 = parseFloat(prompt('Enter Number 1: '));
+        let num2 = parseFloat(prompt('Enter Number 2: '));
+        document.write('The number you entered is :' + [num1,num2]+ '<br>');
+        document.write('Enter after swap is : ' + swap(num1,num2));
+    }
+    main();
+</script>
+
+<script>
+
+</script>
+</body>
+</html>

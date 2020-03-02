@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" oninput="factorial(this.value)" onchange="factorial(this.value);" id='input'>
+<p>Result is : <span id ='rs'></span></p>
+
+<Script>
+    function factorial(){
+        let result = 1;
+        for ( let i = 1 ; i <=input.value ; i++){
+            result *= i;
+        }
+        document.getElementById('rs').innerHTML = result;
+    }
+</Script>
+</body>
+</html>
